@@ -104,5 +104,8 @@
   <ItemGroup>
     <None Include="Resources\end.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\403298__matrixxx__retro-explosion-02.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

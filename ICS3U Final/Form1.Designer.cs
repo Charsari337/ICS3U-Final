@@ -43,6 +43,8 @@ namespace ICS3U_Final
             this.choiceNicon = new System.Windows.Forms.Label();
             this.choiceNlabel = new System.Windows.Forms.Label();
             this.choiceMlabel = new System.Windows.Forms.Label();
+            this.instructionsLabel = new System.Windows.Forms.Label();
+            this.counterLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dialoguePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -206,12 +208,38 @@ namespace ICS3U_Final
             this.choiceMlabel.Text = "Continue";
             this.choiceMlabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // instructionsLabel
+            // 
+            this.instructionsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.instructionsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.instructionsLabel.Font = new System.Drawing.Font("Papyrus", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.instructionsLabel.ForeColor = System.Drawing.Color.White;
+            this.instructionsLabel.Location = new System.Drawing.Point(141, 209);
+            this.instructionsLabel.Name = "instructionsLabel";
+            this.instructionsLabel.Size = new System.Drawing.Size(903, 240);
+            this.instructionsLabel.TabIndex = 13;
+            // 
+            // counterLabel
+            // 
+            this.counterLabel.BackColor = System.Drawing.Color.Transparent;
+            this.counterLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.counterLabel.Font = new System.Drawing.Font("Papyrus", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.counterLabel.ForeColor = System.Drawing.Color.White;
+            this.counterLabel.Location = new System.Drawing.Point(554, 9);
+            this.counterLabel.Name = "counterLabel";
+            this.counterLabel.Size = new System.Drawing.Size(62, 33);
+            this.counterLabel.TabIndex = 14;
+            this.counterLabel.Text = "2000";
+            this.counterLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.counterLabel);
+            this.Controls.Add(this.instructionsLabel);
             this.Controls.Add(this.choiceMlabel);
             this.Controls.Add(this.choiceNlabel);
             this.Controls.Add(this.choiceNicon);
@@ -230,7 +258,6 @@ namespace ICS3U_Final
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
-
             ((System.ComponentModel.ISupportInitialize)(this.dialoguePictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -250,6 +277,8 @@ namespace ICS3U_Final
         private System.Windows.Forms.Label choiceNicon;
         private System.Windows.Forms.Label choiceNlabel;
         private System.Windows.Forms.Label choiceMlabel;
+        private System.Windows.Forms.Label instructionsLabel;
+        private System.Windows.Forms.Label counterLabel;
     }
 }
 

@@ -139,5 +139,14 @@ namespace ICS3U_Final.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Player_death {
+            get {
+                return ResourceManager.GetStream("Player death", resourceCulture);
+            }
+        }
     }
 }
